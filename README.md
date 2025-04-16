@@ -1,5 +1,6 @@
 # NeSyFOLD code-base
 All the files necessary to run the experiments shown in the [paper](https://ojs.aaai.org/index.php/AAAI/article/view/28235) are present in the repo.
+Need to obtain a username and password for using the foldsem api from the [FOLD-SE website](http://ec2-52-0-60-249.compute-1.amazonaws.com/foldse-api/): 
 
 # Instructions
 clone the repository and download the GTSRB, MNIST and PLACES dataset in the root dir.
@@ -41,7 +42,6 @@ python EBP_train.py --dataset_name "PLACES3" --model_check_dir "model_checkpoint
 --dataset_name takes the name of any of the dataset mentioned in the paper to train and --model_check_dir takes the model_checkpoints path 
 This will store the model checkpoints in the model_checkpoints dir.
 ## Experiment 1: Performance characteristics of NeSyFOLD and NeSyFOLD-EBP model and generate the rule-set
-Need to obtain a username and password for using the foldsem api from the [FOLD-SE website](http://foldse-loadbalancer-339280618.us-east-1.elb.amazonaws.com/foldse-api/): 
 
 Run 5 runs of the NeSyFOLD or the NeSyFOLD-EBP model on the given dataset by executing the following commands
 ```console
